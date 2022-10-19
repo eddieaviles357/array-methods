@@ -1,8 +1,3 @@
-// seeds
-let numbers = [1,2,3,4,5,6,7,8,9,10];
-let words = ['hello', 'best', 'words', 'letters'];
-let testObjArr = [{'name': 'ed'},{'name': 'noah'}, {'name': 'eric'}];
-
 // double values in array
 function doubleValues(arr) {
     let doubledVal = [];
