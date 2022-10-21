@@ -10,7 +10,7 @@ function vowelCount(str) {
     let vowels = {a:0,e:0,i:0,o:0,u:0};
     let arr = Array.from(str.toLowerCase());
     return arr.reduce((accum, next) => {
-        if(vowels.hasOwnProperty(next)) {
+        if(Object.hasOwn(vowels, next)) {
             vowels[next]++
             return {...accum, [next] : vowels[next]}
         }
