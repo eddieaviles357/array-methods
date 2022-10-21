@@ -19,9 +19,10 @@ function vowelCount(str) {
 }
 
 function addKeyAndValue(arr, key, value) {
-    arr.reduce((acc, next,i) => {
-        next[key] = value
-    }, {});
+    return arr.reduce((acc, next,i) => {
+        next[key] = value;
+        return acc;
+    }, arr);
 }
 
 function isLongerThanThreeCharacters(val){
