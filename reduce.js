@@ -30,7 +30,7 @@ function isLongerThanThreeCharacters(val){
 function isEven(val){
     return val % 2 === 0;
 }
-var arr = [1,2,3,4,5,6,7,8];
+
 function partition(arr, callback) {
     return arr.reduce((acc, next) => {
             if(callback(next)) {
@@ -38,6 +38,6 @@ function partition(arr, callback) {
             } else {
                 acc[1].push(next);
             }
+            return acc;
     }, [[],[]])
 }
-partition(arr, isEven);
